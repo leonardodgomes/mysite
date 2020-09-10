@@ -1,10 +1,3 @@
-/*
-  Theme Name: Rapid
-  Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1209,6 +1202,88 @@ h6 {
 #faq #faq-list a.collapsed i::before {
   content: "\f2c7" !important;
 }
+
+
+/* Contact Me Section
+--------------------------------*/
+
+#contactme {
+  padding: 80px 0;
+}
+
+#contactme .contactme-content {
+  padding-top: 40px;
+}
+
+#contactme .contactme-content h2 {
+  color: #413e66;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#contactme .contactme-content h3 {
+  color: #696592;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: italic;
+}
+
+#contactme .contactme-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contactme .contactme-content ul li {
+  padding-bottom: 10px;
+}
+
+#contactme .contactme-content ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1bb1dc;
+}
+
+#contactme .contactme-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+}
+
+#contactme .contactme-img img {
+  width: 100%;
+  border: 8px solid #fff;
+  transition: .5s;
+}
+
+#contactme .contactme-img img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+#contactme .contactme-img::before {
+  position: absolute;
+  left: -31px;
+  top: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #ebf1fa;
+  transition: .5s;
+}
+
+#contactme .contactme-img::after {
+  position: absolute;
+  right: -31px;
+  bottom: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #ebf1fa;
+  transition: .5s;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

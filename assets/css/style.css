@@ -397,6 +397,35 @@ section {
   margin-bottom: 0;
 }
 
+.about .about-img{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.about .about-img svg{
+  margin: 0 auto;
+  width:63%;
+  height:auto;
+  position: absolute/
+  z-index: -1;
+}
+
+.about .about-img .photo {
+  position: absolute;
+  text-align: center;
+  width: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+
+}
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/

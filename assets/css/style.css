@@ -450,6 +450,11 @@ section {
   .about .about-img svg{
     width:95%;
   }
+  .about .about-img .photo {
+  width: 100px;
+
+}
+  
 }
 
 

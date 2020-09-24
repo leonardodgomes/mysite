@@ -430,7 +430,7 @@ section {
 
 .about .about-img svg{
   margin: 0 auto;
-  width:63%;
+  width:90%;
   height:auto;
   position: absolute/
   z-index: -1;
@@ -446,7 +446,7 @@ section {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 600px) {
   .about .about-img svg{
     width:95%;
   }

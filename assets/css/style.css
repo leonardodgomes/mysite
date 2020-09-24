@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    padding-left: 100px;
   }
 }
 
@@ -450,6 +450,11 @@ section {
   .about .about-img svg{
     width:95%;
   }
+  .about .about-img .photo {
+  width: 100px;
+
+}
+  
 }
 
 

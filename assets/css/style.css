@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -276,15 +277,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   #hero {
-    padding-left: 170px;
+    background: url("../img/hero-bg-mb.jpg") top left no-repeat;
+    background-size:cover;
   }
 }
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -430,7 +432,7 @@ section {
 
 .about .about-img svg{
   margin: 0 auto;
-  width:90%;
+  width:100%;
   height:auto;
   position: absolute/
   z-index: -1;
@@ -439,22 +441,9 @@ section {
 .about .about-img .photo {
   position: absolute;
   text-align: center;
-  width: 160px;
+  width: 170px;
   border-radius: 50%;
   margin: 0 auto;
-
-}
-
-
-@media (min-width: 600px) {
-  .about .about-img svg{
-    width:95%;
-  }
-  .about .about-img .photo {
-  width: 100px;
-
-}
-
 }
 
 
@@ -613,6 +602,15 @@ section {
   margin-right: 0;
 }
 
+@media (max-width: 992px) {
+  .portfolio #portfolio-flters li {
+    padding: 10px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+  }
+}
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -732,83 +730,17 @@ section {
 }
 
 
-
-
 /*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-  background: #fff;
-  text-align: center;
-}
-
-.contact .info i {
-  font-size: 25px;
-  color: #0563bb;
-  float: top;
-  width: 44px;
-  height: 44px;
-  background: #eef7ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-}
-
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #45505b;
-}
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #728394;
-}
-
-
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #0563bb;
-  color: #fff;
-}
-
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-/*--------------------------------------------------------------
-# Footer
+# Footer/Contact
 --------------------------------------------------------------*/
 #footer {
   background: #f7f8f9;
   color: #45505b;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding-top:50px;
+  padding-bottom: 50px;
+
 }
 
 #footer h3 {
@@ -816,47 +748,68 @@ section {
   font-weight: 700;
   position: relative;
   font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+  padding-bottom:5px
 }
 
 #footer p {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
 }
 
+#footer .contacts a{
+  text-align: center;
+  cursor: default;
+  font-size: 16px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  transition: 0.3s;
+  padding: 5px;
+}
+
+#footer .contacts a:hover {
+  color: #0563bb;
+}
+
+
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin-top: 30px;
+  padding-bottom:20px;
+}
+
+@media (max-width: 600px) {
+  #footer .social-links {
+    padding-left: 35px;
+  }
 }
 
 #footer .social-links a {
-  font-size: 18px;
+  font-size: 50px;
   display: inline-block;
-  background: #0563bb;
-  color: #fff;
+  color: #45505b;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
+  margin-right: 40px;
   transition: 0.3s;
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
-  color: #fff;
-  text-decoration: none;
+  color: #0563bb;
 }
 
-#footer .copyright {
+
+/*--------------------------------------------------------------
+# copyright
+--------------------------------------------------------------*/
+
+.copyright {
+  text-align: center;
+  padding-top:50px;
+  padding-bottom: 50px;
   margin: 0 0 5px 0;
   font-size: 9px;
 }
 
-#footer .credits {
-  font-size: 9px;
+.copyright .credits {
+  font-size: 10px;
 }
